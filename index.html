@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="user_data_title flex item">First Name</div>
+      <div class="user_data_title flex item">Last Name</div>
+      <div class="user_data_title flex item">Age</div>
+    </header>
+    <div id="userContainer" class="userContainer flex">
+    </div>
+
+    <div id="modal" class="modal hide flex">
+      <div class="modal_item flex">
+        <h3>Modal Window</h3>
+        <button class="closeBtn">X</button>
+      </div>
+      <div id="modal_data_name" class="modal_item flex">
+        <label for="input_data_name">Name</label>
+        <input placeholder="enter your name" type="text" id="input_data_name"/>
+      </div>
+      <div id="modal_data_last_name" class="modal_item flex">
+        <label for="input_data__last_name">Last Name</label>
+        <input placeholder="enter your last name" type="text" id="input_data__last_name"/>
+      </div>
+      <div id="modal_data_age" class="modal_item flex">
+        <label for="input_data_age">Age</label>
+        <input placeholder="enter your age" type="text" id="input_data_age"/>
+      </div>
+      <div class="modal_button_block modal_item flex">
+        <button id="modalCancelBtn">Cancel</button>
+        <button id="modalAddBtn">Add user</button>
+      </div>
+    </div>
+
+    <button id="userAddBtn">Add new User</button>
+
+    <script src="./script/script.js" type="module"></script>
+    <script src="./script/data.js" type="module"></script>
+    <script src="./script/addUserfn.js" type="module"></script>
+  </body>
+</html>
