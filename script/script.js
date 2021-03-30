@@ -9,16 +9,38 @@ const userContainer = document.getElementById('userContainer');
 let userDataArray = Array.from(userData);
 let newUserData = [];
 
-
 function setUserData(array) {
-    let containerItem = document.createElement('div');
+    let containerItemName = document.createElement('div');
+    let containerItemLastName = document.createElement('div');
+    let containerItemAge = document.createElement('div');
     for (let i=0; i < array.length; i++) {
-        // containerItem.innerHTML =`<div class='flex'> ${array[i]} </div>`
-        userContainer.insertAdjacentHTML('afterbegin', `<div class=''> ${array[i]} </div>`)   
+        containerItemName.innerHTML +=`<div class='flex item'> ${array[i].firstName} </div>`;
+        containerItemLastName.innerHTML +=`<div class='flex item'> ${array[i].lastName} </div>`;
+        containerItemAge.innerHTML +=`<div class='flex item'> ${array[i].age} </div>`;
     }
+    userContainer.append(containerItemName);
+    userContainer.append(containerItemLastName);
+    userContainer.append(containerItemAge);
+
+    console.log(array)
 };
 
 setUserData(data)
+
+
+// найти инпуты, получить их вэлью, запихинуть в объект и по клику на кнопку этот объект пушить в массив
+
+
+// function setUserData() {
+//     const divElement = document.createElement('div');
+//     userContainer.append(divElement);
+//     divElement.insertAdjacentHTML('afterend', `<div class='item'> ${data[0].firstName} </div>`);
+//     divElement.insertAdjacentHTML('afterend', `<div class='item'> ${data[1].firstName} </div>`);
+//     divElement.insertAdjacentHTML('afterend', `<div class='item'> ${data[2].firstName} </div>`);
+    
+    // divElement.insertAdjacentHTML('afterbegin', `<div class='modal_item'> ${data[3].lastName} </div>`);
+// }
+
 
 modalCancelBtn.addEventListener('click', () => modalWindow.classList.add('hide'));
 

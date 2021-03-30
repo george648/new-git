@@ -3,18 +3,18 @@
 const data = [
     {
         firstName: 'Anton',
-        lastName: 'Bill',
-        age: 24
+        lastName: 'Bel',
+        age: 34
     },
     {
         firstName: 'Mike',
         lastName: 'Amer',
-        age: 24
+        age: 21
     },
     {
         firstName: 'Nick',
         lastName: 'Pol',
-        age: 24
+        age: 2
     },
 ] 
 

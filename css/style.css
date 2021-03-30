@@ -8,6 +8,10 @@
     opacity: 0;
 }
 
+.row {
+    flex-direction: row;
+}
+
 .flex {
     display: flex;
 }
@@ -24,7 +28,6 @@
     align-items: center;
 }
 
-
 .modal {
     width: 350px;
     height: 300px;
@@ -38,7 +41,6 @@
     transform: translate(-50%, -50%);
     padding: 0 25px;
 }
-
 
 .modal_item {
     justify-content: space-between;
